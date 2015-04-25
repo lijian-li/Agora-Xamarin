@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" userLabel="View Controller" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tiG-UO-Fv7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Muk-OL-DbW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bjq-lJ-eV5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrX-Ij-Q1v">
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="join">
+                                    <color key="titleColor" red="0.098166876289999996" green="0.38182790950000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Join:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Rf-wG-cmh"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3Y-1W-m53">
+                                <rect key="frame" x="0.0" y="488" width="100" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fgM-6x-xwW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="mute">
+                                    <color key="titleColor" red="0.098166876289999996" green="0.38182790950000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SwitchMute:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mgX-Hu-tfJ"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5f-Lq-AdT">
+                                <rect key="frame" x="220" y="488" width="100" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="leave">
+                                    <color key="titleColor" red="0.098166876289999996" green="0.38182790950000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Leave:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W8v-O7-3RO"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV4-OJ-smI" userLabel="Button - speaker">
+                                <rect key="frame" x="110" y="488" width="100" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="speaker">
+                                    <color key="titleColor" red="0.098166876289999996" green="0.38182790950000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SwitchSpeaker:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R2F-FR-nAI"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnv-df-Cai">
+                                <rect key="frame" x="5" y="120" width="310" height="360"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6D7A26A1D3554A54A9F43BE6797FE3E2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMF-Ci-ott">
+                                <rect key="frame" x="17" y="94" width="287" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="enter channel name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bMT-Fe-NcY">
+                                <rect key="frame" x="20" y="50" width="283" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Tq-vt-0IC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="join"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="bottom" secondItem="hV4-OJ-smI" secondAttribute="bottom" id="0ek-WD-u8e"/>
+                            <constraint firstItem="Pnv-df-Cai" firstAttribute="top" secondItem="UMF-Ci-ott" secondAttribute="bottom" constant="8" id="4yX-zm-ieL"/>
+                            <constraint firstAttribute="trailing" secondItem="c5f-Lq-AdT" secondAttribute="trailing" id="5gO-hs-u99"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="height" secondItem="c5f-Lq-AdT" secondAttribute="height" id="7aM-lb-gJe"/>
+                            <constraint firstAttribute="trailing" secondItem="bMT-Fe-NcY" secondAttribute="trailing" constant="17" id="85m-QS-IO6"/>
+                            <constraint firstItem="bMT-Fe-NcY" firstAttribute="top" secondItem="tiG-UO-Fv7" secondAttribute="bottom" constant="30" id="9Yq-eY-Bbt"/>
+                            <constraint firstAttribute="trailing" secondItem="Pnv-df-Cai" secondAttribute="trailing" constant="5" id="FPC-KQ-AEV"/>
+                            <constraint firstItem="c5f-Lq-AdT" firstAttribute="leading" secondItem="hV4-OJ-smI" secondAttribute="trailing" constant="10" id="FWl-h8-U7j"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="top" secondItem="hV4-OJ-smI" secondAttribute="top" id="JQi-NI-4iH"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="width" secondItem="hV4-OJ-smI" secondAttribute="width" id="Kgh-bS-yF3"/>
+                            <constraint firstAttribute="centerX" secondItem="UMF-Ci-ott" secondAttribute="centerX" id="P9G-8N-jgn"/>
+                            <constraint firstItem="Pnv-df-Cai" firstAttribute="leading" secondItem="bjq-lJ-eV5" secondAttribute="leading" constant="5" id="TFX-yd-aq5"/>
+                            <constraint firstAttribute="bottom" secondItem="m3Y-1W-m53" secondAttribute="bottom" id="V5h-xa-Tkv"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="width" secondItem="c5f-Lq-AdT" secondAttribute="width" id="WsM-yy-dJX"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="leading" secondItem="bjq-lJ-eV5" secondAttribute="leading" id="amG-Pa-j5v"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="bottom" secondItem="hrX-Ij-Q1v" secondAttribute="bottom" id="ehh-XI-hYH"/>
+                            <constraint firstItem="UMF-Ci-ott" firstAttribute="top" secondItem="bMT-Fe-NcY" secondAttribute="bottom" constant="14" id="fwF-2n-dTg"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="top" secondItem="hrX-Ij-Q1v" secondAttribute="top" id="lMj-u9-CFA"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="top" secondItem="Pnv-df-Cai" secondAttribute="bottom" constant="8" id="mby-e0-FVE"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="bottom" secondItem="c5f-Lq-AdT" secondAttribute="bottom" id="pDu-u4-VR0"/>
+                            <constraint firstItem="hrX-Ij-Q1v" firstAttribute="trailing" secondItem="c5f-Lq-AdT" secondAttribute="trailing" id="pN3-7w-P85"/>
+                            <constraint firstItem="bMT-Fe-NcY" firstAttribute="leading" secondItem="bjq-lJ-eV5" secondAttribute="leading" constant="20" id="poT-yk-wZy"/>
+                            <constraint firstItem="m3Y-1W-m53" firstAttribute="leading" secondItem="hrX-Ij-Q1v" secondAttribute="leading" id="vcm-gt-aPh"/>
+                            <constraint firstItem="hV4-OJ-smI" firstAttribute="leading" secondItem="m3Y-1W-m53" secondAttribute="trailing" constant="10" id="xD6-6X-D4e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="JoinButton" destination="hrX-Ij-Q1v" id="1X2-LO-NkU"/>
+                        <outlet property="KeyLabel" destination="UMF-Ci-ott" id="BfJ-rt-V6K"/>
+                        <outlet property="LeaveButton" destination="c5f-Lq-AdT" id="1GV-U3-AHg"/>
+                        <outlet property="LogMessageTextView" destination="Pnv-df-Cai" id="ze9-IT-fGD"/>
+                        <outlet property="MuteSwitchButton" destination="m3Y-1W-m53" id="L0s-DZ-58B"/>
+                        <outlet property="NameTextField" destination="bMT-Fe-NcY" id="yPk-IF-1M1"/>
+                        <outlet property="SpeakerSwitchButton" destination="hV4-OJ-smI" id="W8k-ld-2yw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
